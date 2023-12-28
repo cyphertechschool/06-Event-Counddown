@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: url('./images/clock.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    content: '';
+    display: block;
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+.container {
+    margin: 0 1rem;
+    border-radius: 5px;
+    padding: 3rem;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.85);
+    z-index: 10;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0px 25px 5px rgba(0, 0, 0, 0.655);
+
+}
+
+.input-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #222;
+    text-transform: capitalize;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #444;
+
+}
+
+.form-group input {
+    padding: 8px 14px;
+    outline: none;
+    border: 1px solid #666;
+    border-radius: 100px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 14px;
+    outline: none;
+    border: 1px solid #656aea;
+    background-color: #656aea;
+    color: #eee;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+/* countdown */
+.countdown {
+    margin-bottom: 25px;
+}
+
+.countdown h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #222;
+    text-transform: capitalize;
+}
+
+.countdown ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+
+.countdown ul li {
+    color: #666;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.countdown ul li span {
+    margin-right: 10px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #333;
+}
+
+/* complete */
+
+.complete h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.complate-title {
+    color: #267224;
+}
+
+#complete-info {
+    color: ##333;
+}
+
+#complete-button {
+    margin-top: 35px;
+}
+
+/* media query */
+
+@media screen and (max-width:600px) {
+    .container {
+        padding: 3rem 1rem;
+    }
+
+    .container h1 {
+        font-size: 1.8rem;
+    }
+
+    .countdown ul {
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>06 Custom CountDown</title>
+  </head>
+  <body>
+    <!-- background overlay -->
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="input-container" id="input-container">
+        <h1>Create a custom Countdown Event!</h1>
+        <form action="" id="countdownForm">
+          <div class="form-group">
+            <label for="title">Event Name</label>
+            <input
+              type="text"
+              id="title"
+              placeholder="What are you counting down to?"
+            />
+          </div>
+          <div class="form-group">
+            <label for="date-picker">Select a date</label>
+            <input type="date" id="date-picker" />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <!-- countdown -->
+
+      <div class="countdown" id="countdown" hidden>
+        <h1 id="countdown-title"></h1>
+        <ul>
+          <li><span></span>Days</li>
+          <li><span></span>Hours</li>
+          <li><span></span>Minutes</li>
+          <li><span></span>Second</li>
+        </ul>
+        <button id="countdown-button">Reset</button>
+      </div>
+
+      <!-- complate -->
+      <div class="complete" id="complete" hidden>
+        <h2 class="complate-title">Countdown Complete</h2>
+        <h2 id="complete-info"></h2>
+        <button id="complete-button">New Countdown</button>
+      </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
